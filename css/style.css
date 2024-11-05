@@ -101,3 +101,28 @@
     height: 400px;
     border: 1px dashed black
 }
+
+/*------------
+ THIRD SECTION
+------------*/
+.third-sec{
+    min-width: 600px;
+    background-color: #ffffff;
+    padding: 15px 0px;
+}
+.third-sec > .container{
+    display:flex
+}
+
+.big-col{
+    background-color: #1F90FF;
+    width: 710px;
+    height: 400px;
+    border: 1px dashed black
+}
+.small-col{
+    background-color: #EE82EF;
+    width: 480px;
+    height: 400px;
+    border: 1px dashed black
+}
