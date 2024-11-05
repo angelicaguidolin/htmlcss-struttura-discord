@@ -126,3 +126,22 @@
     height: 400px;
     border: 1px dashed black
 }
+
+/*------------
+FOURTH SECTION
+------------*/
+.fourth-sec{
+    min-width: 1000px;
+    background-color: #D3D3D3;
+    padding: 15px 0px;
+}
+.fourth-sec > .container{
+    display: flex;
+}
+.big-green-col{
+    background-color: #228B23;
+    height: 900px;
+    width: 1200px;
+    border: 1px dashed black;
+   
+}
