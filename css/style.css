@@ -27,8 +27,49 @@
     background-color: #EE82EF;
     border: 1px dashed black;
 }
+.debug section > .container {
+    min-height: 400px;
+}  
+.debug .big-col{
+    background-color: #1F90FF;
+    border: 1px dashed black
+}
+.debug .small-col{
+    background-color: #EE82EF;
+    border: 1px dashed black
+}
+.debug .second-sec{
+  background-color: #D3D3D3;
+}
+.debug section > .big-green-col{
+    min-height: 400px;
+}
+.debug section:last-child > .big-green-col {
+    background-color: #228b22;
+    border: 1px dashed black;
+    min-height: 800px;
+}
+.debug .footer-top > .container {
+    min-height: 500px;
+}
+.debug .footer-top .col-small {
+    background-color: #f08080;
+}
+.debug .footer-top .col-big {
+    background-color: #20b2aa;
+}
+.debug .footer-top .col-big > .col-inner {
+    border: 1px dashed #fff;
+}
+.debug .footer-bottom > .container {
+    background-color: #7fffd4;
+}
 
-
+.debug .footer-bottom .logo,
+.debug .footer-bottom .btn {
+    border: 1px dashed black;
+    background-color: #ffb6c1;
+}
 
 /*------------
     GENERAL
@@ -42,78 +83,72 @@
 /*------------
     HEADER
 ------------*/    
-.header-top{
-    padding: 15px 0px;
+.header-top {
+    padding: 16px 0;
 }
 
-.header-top > .container{
+.header-bottom {
+    padding: 30px 0;
+}
+
+.header-top > .container {
     display: flex;
-    background-color: #DAA520;
 }
+
 .header-top > .container > *{
-   padding: 6px 6px;
+    padding: 6px;  
 }
-.header-top .logo{
+   
+.header-top .logo, .header-top .login {
     width: 20%;
 }
-.header-top .login{
-    width: 20%;
+
+.header-top .login {
     text-align: right;
 }
-.header-top .nav{
-   width: 60%;
-    text-align: center;
 
+.header-top .nav {
+    width: 60%;
 }
-.nav ul{
+
+.nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 10px;
-}
-.nav ul a{
-    text-decoration: none;
-    color: inherit;
+    gap: 10px
 }
 
-.header-bottom{
-    padding: 30px 0px;
+.nav ul a {
+    text-decoration: none;
+    color: inherit
 }
-.header-bottom .header-col{
-     min-width: 910px;
-}    
+
+.header-bottom .header-col {
+    max-width: 920px;
+}
 
 /*------------
    FIRST SECTION
 ------------*/    
-.first-sec{
-    min-width: 600px;
-    background-color: #ffffff;
-    padding: 15px 0px;
+section {
+    padding: 50px 0;
 }
-.first-sec > .container{
-    display:flex
+section > .container {
+    display: flex;
+}
+section .big-col {
+    width: 60%;
+}
+section .small-col {
+    width: 40%;
 }
 
-.big-col{
-    background-color: #1F90FF;
-    width: 710px;
-    height: 400px;
-    border: 1px dashed black
-}
-.small-col{
-    background-color: #EE82EF;
-    width: 480px;
-    height: 400px;
-    border: 1px dashed black
-}
 /*------------
    SECOND SECTION
 ------------*/
+
 .second-sec{
-    min-width: 600px;
-    background-color: #D3D3D3;
-    padding: 15px 0px
+    padding: 50px 0;
 }
 .second-sec > .container{
     display:flex;
@@ -135,28 +170,18 @@
 /*------------
  THIRD SECTION
 ------------*/
-.third-sec{
-    min-width: 600px;
-    background-color: #ffffff;
-    padding: 15px 0px;
+section {
+    padding: 50px 0;
 }
-.third-sec > .container{
-    display:flex
+section > .container {
+    display: flex;
 }
-
-.big-col{
-    background-color: #1F90FF;
-    width: 710px;
-    height: 400px;
-    border: 1px dashed black
+section .big-col {
+    width: 60%;
 }
-.small-col{
-    background-color: #EE82EF;
-    width: 480px;
-    height: 400px;
-    border: 1px dashed black
+section .small-col {
+    width: 40%;
 }
-
 /*------------
 FOURTH SECTION
 ------------*/
@@ -174,4 +199,47 @@ FOURTH SECTION
     width: 1200px;
     border: 1px dashed black;
    
+}
+/*-----------
+    FOOTER
+------------*/
+footer {
+    background-color: #23272a;
+}
+
+.footer-top {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer-top > .container {
+    display: flex;
+}
+
+.footer-top .col-small {
+    width: 30%;
+}
+.footer-top .col-big {
+    width: 70%;
+    display: flex;
+}
+
+.footer-top .col-big > .col-inner {
+    width: 25%;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #ffffff;
+}
+
+.footer-bottom > .container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .logo,
+.footer-bottom .btn {
+    padding: 6px 14px;
 }
