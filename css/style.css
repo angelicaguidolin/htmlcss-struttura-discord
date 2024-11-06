@@ -6,6 +6,30 @@
     padding:0;
     box-sizing: border-box;
 }
+
+
+/*------------
+    DEBUG
+------------*/    
+.debug .header-top{
+    background-color: #ADD8E6;
+}
+.debug .header-bottom {
+    background-color: #00008b;
+}
+.debug .header-top > .container{
+    background-color: #DAA520;  
+}
+.debug .header-top > .container > *{
+    border: 1px dashed black;
+}
+.debug .header-bottom .header-col{
+    background-color: #EE82EF;
+    border: 1px dashed black;
+}
+
+
+
 /*------------
     GENERAL
 ------------*/    
@@ -19,16 +43,15 @@
     HEADER
 ------------*/    
 .header-top{
-    background-color: #ADD8E6;
     padding: 15px 0px;
 }
+
 .header-top > .container{
     display: flex;
     background-color: #DAA520;
 }
 .header-top > .container > *{
-    border: 1px dashed black;
-    padding: 6px 6px;
+   padding: 6px 6px;
 }
 .header-top .logo{
     width: 20%;
@@ -40,18 +63,25 @@
 .header-top .nav{
    width: 60%;
     text-align: center;
+
 }
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.nav ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .header-bottom{
-    background-color: #00008B;
     padding: 30px 0px;
 }
-.header-col{
-    background-color: #EE82EF;
-    border: 1px dashed black;
-    width: 910px;
-    height: 400px;
-    margin: auto;
-}
+.header-bottom .header-col{
+     min-width: 910px;
+}    
 
 /*------------
    FIRST SECTION
